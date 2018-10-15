@@ -1,0 +1,145 @@
+header {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  display: block;
+  z-index: 10;
+  background-color: #cf8b3b;
+  padding: 0 160px;
+  box-sizing: border-box;
+}
+
+.row {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+[class*="col-"] {
+  position: relative;
+  float: left;
+}
+.col-10 {
+  width: 83.33%;
+}
+
+.loaded header .logo {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1s;
+}
+
+.logo {
+  z-index: 9;
+}
+
+[class*="col-"] {
+  position: relative;
+  float: left;
+}
+.col-2 {
+  width: 16.66%;
+}
+
+header .toggle-cart {
+  transform: translateX(-100px);
+  -webkit-transform: translateX(-100px);
+}
+header .toggle-nav, header .toggle-cart {
+  position: fixed;
+  top: 67.5px;
+  right: 6%;
+  padding: 20px;
+  cursor: pointer;
+  color: #fff;
+  transition: all .3s;
+}
+
+.toggle-nav>span, .toggle-cart>span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-right: 5px;
+  transition: all .3s;
+}
+
+.toggle-cart>span::before {
+  content: 'корзина';
+ }
+
+.toggle-nav>span::before {
+  content: 'меню';
+}
+
+.toggle-nav>span::before, .toggle-cart>span::before {
+  font-weight: bold;
+  text-transform: uppercase;
+  font: 16px 'Calibri',sans-serif;;
+}
+
+.basket {
+  width: 29px;
+  height: 22px;
+}
+
+.toggle {
+  width: 27px;
+  height: 18px;
+}
+
+.toggle span, .toggle-bag span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transition: all .3s;
+}
+
+.toggle-bag p {
+  text-align: center;
+  font-size: 9px;
+  line-height: 14px;
+}
+
+.toggle-bag span:nth-child(3) {
+  top: 14px;
+}
+
+.toggle-nav, .toggle-cart {
+  z-index: 9;
+}
+
+.toggle-cart {
+  margin-right: 55px;
+}
+
+.toggle-nav .toggle, .toggle-cart .toggle-bag {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.toggle span, .toggle-bag span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transition: all .3s;
+}
+
+.toggle span:nth-child(2) {
+  top: 7px;
+}
+
+.toggle span:nth-child(3), .toggle-bag span:nth-child(3) {
+  top: 14px;
+}
+

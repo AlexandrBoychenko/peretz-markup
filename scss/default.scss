@@ -1,8 +1,10 @@
 /*Reset*/
-html, body, div, section, article, p, blockquote, ul, li{
+html, body, div, section, article, p, blockquote, ul, li, span{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Calibri',sans-serif;
+  color: #fff;
 }
 
 /*Fonts*/
@@ -17,13 +19,18 @@ a {
   color: #00adef;
 }
 
+img {
+  border: 0;
+  max-width: 100%;
+}
+
 .wrapper {
-  width: 1166px;
-  margin: auto;
+  width: 100%;
+  height: 2000px;
+  background-color: #cf8b3b;
 }
 
 h1, h2, h3, h4, h5, p {
-  font-family: Roboto;
   color: #000000;
   margin: 0px;
 }
@@ -36,8 +43,4 @@ h1 {
 
 h2 {
   font-size: 25px;
-}
-
-body {
-  background-color: pink;
 }
