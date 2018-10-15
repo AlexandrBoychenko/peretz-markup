@@ -1,0 +1,43 @@
+/*Reset*/
+html, body, div, section, article, p, blockquote, ul, li{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  color: #00adef;
+}
+
+.wrapper {
+  width: 1166px;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: Roboto;
+  color: #000000;
+  margin: 0px;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+body {
+  background-color: pink;
+}
