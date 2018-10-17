@@ -21,17 +21,41 @@
   top: 35%;
 }
 
+.arrow {
+  position: absolute;
+  top: 30%;
+  padding: 2%;
+  z-index: 8;
+  cursor: pointer;
+  transition: all 1s cubic-bezier(.165,.84,.44,1);
+}
+
+.arrow.left {
+  left: 0;
+}
+
+.arrow.right {
+  right: 0;
+}
+
 .jar {
   position: absolute;
   right: -50px;
   height: 619px;
   width: 1293px;
   margin-top: 130px;
+}
 
+.jar-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
 
 .text-content {
   margin: 0 130px;
+  height: 700px;
 }
 
 .content-text {
@@ -67,4 +91,71 @@
   font: 16px "Calibri", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.side-label.slide-control {
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  right: 6%;
+}
+
+.side-label {
+  position: absolute;
+  top: 50%;
+  color: #4c5758;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 10px;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  z-index: 8;
+}
+
+.slide-control::before {
+  width: 1px;
+  height: 30px;
+  right: 7px;
+  bottom: auto;
+  top: 71px;
+}
+.side-label::before .side-label::before {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: -9px;
+  width: 30px;
+  height: 1px;
+  background-color: #4c5758;
+  transform: rotate(90deg);
+}
+
+.slide-control span {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 50px 0;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.slide-control::after {
+  width: 1px;
+  height: 30px;
+  right: 7px;
+  top: 134px;
+  left: auto;
+}
+.side-label::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: calc(100% + 15px);
+  width: 30px;
+  height: 1px;
+  background-color: #4c5758;
 }

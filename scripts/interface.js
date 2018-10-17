@@ -10,6 +10,8 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 3000,
         arrows: true,
-        draggable: true
+        draggable: true,
+        prevArrow: `<div class="arrow left"><img src="img/arrow-left.png" alt="Здравфарм"></div>`,
+        nextArrow: `<div class="arrow right"><img src="img/arrow-right.png" alt="Здравфарм"></div>`
     });
 });
