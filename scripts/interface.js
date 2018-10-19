@@ -1,3 +1,15 @@
+(function() {
+    let i = 0;
+    let slides = $('.slide-control').children();
+    $(".slider").on("beforeChange", function (){
+        let remElement = $("[data-selector='active-number']");
+        remElement.removeAttr('data-selector');
+        i === slides.length ? i = 0: null;
+        $(`.b-slide-0${i+1}`).attr('data-selector', 'active-number');
+        i++;
+    });
+}());
+
 $(document).ready(function(){
     $('.slider').slick({
         dots: true,

@@ -108,6 +108,7 @@
 .side-label {
   position: absolute;
   top: 50%;
+  left: 3%;
   color: #4c5758;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -127,15 +128,14 @@
   bottom: auto;
   top: 71px;
 }
-.side-label::before .side-label::before {
-  content: "";
+.side-label::before {
+  content: '';
   position: absolute;
-  top: 90px;
-  left: -9px;
+  bottom: 3px;
+  right: calc(100% + 15px);
   width: 30px;
   height: 1px;
   background-color: #4c5758;
-  transform: rotate(90deg);
 }
 
 .slide-control span {
@@ -162,4 +162,9 @@
   width: 30px;
   height: 1px;
   background-color: #4c5758;
+}
+
+[data-selector = active-number] {
+  color: green;
+  font-weight: bold
 }
