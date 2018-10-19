@@ -1,8 +1,9 @@
 #hero {
   width: 100%;
-  height: 1026px;
+  height: 1045px;
   background: url(img/background.png) no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position-x: 50%;
   position: relative;
   overflow: hidden
 }
@@ -44,10 +45,11 @@
 
 .jar {
   position: absolute;
-  left: 27%;
+  left: 20%;
   height: 495px;
   width: 1034px;
   margin-top: 130px;
+  z-index: -1;
 }
 
 .jar-img {
@@ -60,6 +62,9 @@
 .text-content {
   margin: 0 130px;
   height: 700px;
+  background-color: #cf8b3b;
+  width: 41.5%;
+  z-index: 0;
 }
 
 .content-text {
@@ -67,7 +72,13 @@
   font: 77px "Oswald", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
-  width: 620px;
+}
+
+.content-text::after {
+  content: "";
+  background-color: #f2ab1f;
+  width: 21px;
+  height: 2px;
 }
 
 .additional-text {
@@ -100,42 +111,49 @@
 .side-label.slide-control {
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  right: 6%;
 }
 
 .side-label {
   position: absolute;
-  top: 50%;
-  left: 3%;
+  top: 32.3%;
+  right: 9%;
   color: #4c5758;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 10px;
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
   z-index: 8;
 }
 
-.slide-control::before {
+.side-label::after, .vertical-text::after,
+.side-label::before, .vertical-text::before {
+  content: "";
+  position: absolute;
   width: 1px;
   height: 30px;
-  right: 7px;
-  bottom: auto;
-  top: 71px;
-}
-.side-label::before {
-  content: '';
-  position: absolute;
-  bottom: 3px;
-  right: calc(100% + 15px);
-  width: 30px;
-  height: 1px;
+  left: 7px;
   background-color: #4c5758;
+}
+
+.side-label::after {
+  top: 137px;
+}
+
+.side-label::before {
+  top: 73px;
+}
+
+.vertical-text::before, .vertical-text::after {
+  top: -35%;
+  transform: rotate(-90deg);
+}
+
+.vertical-text::before {
+  left: -20%
+}
+
+.vertical-text::after {
+  left: 120%
 }
 
 .slide-control span {
@@ -147,24 +165,43 @@
   cursor: pointer;
 }
 
-.slide-control::after {
-  width: 1px;
-  height: 30px;
-  right: 7px;
-  top: 134px;
-  left: auto;
-}
-.side-label::after {
-  content: '';
-  position: absolute;
-  bottom: 3px;
-  left: calc(100% + 15px);
-  width: 30px;
-  height: 1px;
-  background-color: #4c5758;
+[data-id] {
+  color: #4c5758;
 }
 
 [data-selector = active-number] {
-  color: green;
+  color: #ffffff;
   font-weight: bold
+}
+
+.slick-list div:nth-child(3) img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  left: 600px;
+}
+
+.slider-track {
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.item {
+  img {
+    transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+    transform: scale(1.2);
+  }
+
+  &.slick-active img {
+    transform: scale(1);
+  }
+}
+
+.vertical-text {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font: 14px 'Calibri', sans-serif;
+  color: #474747;
+  left: 3%;
+  position: absolute;
+  top: 33%
 }

@@ -1,6 +1,7 @@
 (function() {
-    let i = 0;
+    let i = 1;
     let slides = $('.slide-control').children();
+    $(`.b-slide-0${i}`).attr('data-selector', 'active-number');
     $(".slider").on("beforeChange", function (){
         let remElement = $("[data-selector='active-number']");
         remElement.removeAttr('data-selector');
@@ -12,36 +13,15 @@
 
 $(document).ready(function(){
     $('.slider').slick({
-        dots: true,
         infinite: true,
-        speed: 500,
+        speed: 900,
         fade: true,
-        /*cssEase: 'linear',
-        accessibility: true,
-        adaptiveHeight: true,
-        autoplay: true,*/
+        /*autoplay: true,*/
         autoplaySpeed: 3000,
-        arrows: true,
         draggable: true,
+        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+        touchThreshold: 100,
         prevArrow: `<div class="arrow left"><img src="img/arrow-left.png" alt="Здравфарм"></div>`,
-        nextArrow: `<div class="arrow right"><img src="img/arrow-right.png" alt="Здравфарм"></div>`,
-        //dotsClass: 'b-slide',
-        customPaging : function(slider, i) {
-            let thumb = $(slider.$slides[i]).data();
-            if ($('.b-slide').attr('#data-id') === i) {
-                $('#data-id').color = 'red';
-            }
-            return '<a>'+ '0' + (i+1) + '</a>';
-        },
-        responsive: [{
-            breakpoint: 500,
-            settings: {
-                dots: false,
-                arrows: false,
-                infinite: false,
-                slidesToShow: 2,
-                slidesToScroll: 2
-            }
-        }]
+        nextArrow: `<div class="arrow right"><img src="img/arrow-right.png" alt="Здравфарм"></div>`
     });
 });
