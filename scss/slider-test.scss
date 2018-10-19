@@ -205,3 +205,81 @@
   position: absolute;
   top: 33%
 }
+
+.arrow-down {
+  position: absolute;
+  top: 80%;
+  left: 49%;
+  z-index: 1;
+  transform: rotate(-90deg);;
+
+  .arrow-d {
+    display: inline-block;
+    font-size: 26px;
+    color: #ffffff;
+  }
+
+  .line {
+    width: 42px;
+    height: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -6px;
+    background-color: #ffffff;
+  }
+}
+
+#hero .follow {
+  right: 5%;
+}
+
+#hero .follow {
+  position: absolute;
+  bottom: 50px;
+  right: 4%;
+  padding: 2%;
+  z-index: 8;
+  transition: all 0.8s cubic-bezier(.165,.84,.44,1);
+  cursor: pointer;
+}
+
+.show .enter-y, .show .enter-x, .show .enter-y-r, .show .enter-x-r {
+  opacity: 1;
+  transform: translate(0);
+}
+
+#hero .follow div * {
+  display: block;
+  margin: 0 auto;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#hero .follow a {
+  font-size: 20px;
+  padding: 5px;
+  transition: all .3s;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+}
+
+.social {
+  display: block;
+}
+
+.basic-social {
+  display: none;
+}
