@@ -1,0 +1,109 @@
+.pop-up {
+  width: 100%;
+  height: 1062px;
+  background: #000000;
+  opacity: 64;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.pop-up-window {
+  position: relative;
+  display: block;
+  width: 875px;
+  height: 617px;
+  background: #ffffff;
+}
+
+.close-window {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.close-window > p {
+  text-transform: uppercase;
+  color: #444443;
+  margin-right: 10px;
+}
+
+.close-window > img {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.close-window * {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.order-call-text {
+  font: 77px "Oswald", "Sans-serif";
+  text-transform: uppercase;
+  margin: 80px 0 70px 0;
+  text-align: center;
+  color: #444443;
+}
+
+.order-inputs * {
+  width: 548px;
+  height: 65px;
+}
+
+.order-inputs {
+  text-align: center;
+}
+
+.order-phone {
+  margin-top: 15px;
+}
+
+.order-name::placeholder, .order-phone::placeholder {
+  font-size: 16px;
+  padding-left: 45px;
+  color: rgba(68, 68, 67, 0.33);
+}
+
+.order-name:focus, .order-phone:focus {
+  border-color: #b77309;
+}
+
+.pop-up-btn {
+  width: 250px;
+  height: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 47px 100px 0;
+  text-transform: uppercase;
+  background-color: #cf8b3b;
+  border: none;
+}
+
+.thanks {
+  background: #ffffff url(img/background-triangle.png) 118%
+}
+
+.pop-up-logo {
+  margin-top: 60px;
+  width: 180px;
+  height: 120px;
+}
+
+.big-text {
+  margin-top: 70px;
+  font: 36px Oswald, Sans-serif;
+  text-transform: uppercase;
+}
+
+.middle-text {
+  width: 660px;
+  margin: 30px auto 0;
+  font: 24px Calibri, Sans-serif;
+}
+
+.big-text, .middle-text {
+  color: #474747;
+}
