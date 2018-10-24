@@ -28,7 +28,7 @@
   margin-right: 10px;
 }
 
-.close-window > img {
+.close-window > .close-sign {
   height: 20px;
   width: 20px;
   cursor: pointer;
@@ -40,12 +40,15 @@
   text-align: center;
 }
 
-.order-call-text {
+.order-call-text, .basket-text {
   font: 77px "Oswald", "Sans-serif";
   text-transform: uppercase;
+  color: #444443;
+}
+
+.order-call-text {
   margin: 80px 0 70px 0;
   text-align: center;
-  color: #444443;
 }
 
 .order-inputs * {
@@ -106,4 +109,67 @@
 
 .big-text, .middle-text {
   color: #474747;
+}
+
+.basket {
+  width: 1460px;
+  height: 775px;
+}
+
+.basket-wrapper {
+  padding: 40px 55px 85px 70px;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.make-order {
+  font-size: 0;
+  margin-top: 55px;
+}
+
+.make-order * {
+  display: inline-block;
+  height: 100%;
+}
+
+.scroll-bar {
+  width: 56%;
+}
+
+.order-inputs {
+  width: 44%;
+}
+
+.jar-item {
+  padding: 28px 0;
+}
+
+.jar-item * {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.jar-little {
+  width: 56px;
+  height: 85px;
+}
+
+.jar-name {
+  font: 26px Calibri, sans-serif;
+  color: #444443;
+  margin-left: 50px;
+  margin-right: 70px;
+}
+
+.plus, .minus {
+  background: #eceaea;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.plus > p, .minus > p {
+  font: 24px Oswald, sans-serif;
+  color: #444443;
 }
