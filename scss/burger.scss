@@ -1,0 +1,78 @@
+$oswald-36: 36px Oswald, Sans-serif;
+
+.wrapper-burger {
+  position: relative;
+  height: 1045px;
+  width: 50%;
+  margin-left: 50%;
+  opacity: 0.9;
+  background: #833c40 $triangle-back no-repeat 0/cover;
+}
+
+.burger-close {
+  right: 80px;
+  top: 20px;
+}
+
+.burger-close > p {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.wrapper-burger {
+  padding: 20px 80px 30px 130px;
+}
+
+.wrapper-burger-list {
+  padding-top: 65px;
+}
+
+.list-burger li, .social-bar li {
+  margin-top: 26px;
+  text-transform: uppercase;
+  font: $oswald-36;
+}
+
+.list-burger li:hover {
+  font-weight: bold;
+  color: #cf8b3b;
+  cursor: pointer;
+}
+
+.list-burger li img {
+  display: none;
+  vertical-align: middle;
+  transform: rotate(-90deg);
+  margin: 0 15px;
+}
+
+.social-bar {
+  margin-top: 60px;
+}
+
+.social-bar::before {
+  display: block;
+  content: "";
+  background-color: #f2ab1f;
+  width: 20px;
+  height: 2px;
+}
+
+.lang-bar {
+  position: absolute;
+  bottom: 26px;
+  right: 70px;
+}
+
+.lang-bar li {
+  display: inline-block;
+  text-transform: uppercase;
+  font: $oswald-36;
+  padding: 0 10px;
+  line-height: 37px;
+}
+
+.lang-bar li:first-child {
+  border-right: 3px solid #ffffff;
+}
