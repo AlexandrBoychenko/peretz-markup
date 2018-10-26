@@ -1,16 +1,17 @@
+$triangle-back:   url(img/background-triangle.png);
+
 .pop-up {
   width: 100%;
-  height: 1062px;
-  background: #000000;
-  opacity: 64;
+  height: 100%;
+  background: rgba(0,0,0,0.64);
   display: flex;
   justify-content: center;
-  align-items: center
 }
 
 .pop-up-window {
   position: relative;
   display: block;
+  top: 30vh;
   width: 875px;
   height: 617px;
   background: #ffffff;
@@ -87,7 +88,7 @@
 }
 
 .thanks {
-  background: #ffffff url(img/background-triangle.png) 118%
+  background: #ffffff $triangle-back 118%
 }
 
 .pop-up-logo {
@@ -268,4 +269,11 @@
 .sold {
   width: 993px;
   height: 625px;
+}
+
+.wrapper-burger {
+  height: 100%;
+  width: 50%;
+  margin-left: 50%;
+  background: #833c40 $triangle-back 118%;
 }
