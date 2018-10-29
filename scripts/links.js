@@ -1,10 +1,10 @@
 $('.list-burger li').mouseenter(
-    function(event) {
-        event.target.querySelector('img').setAttribute('style', 'display: inline-block');
+    (event) => {
+        $(event.target).find('img').css('display', 'inline-block');
     }
 )
     .mouseleave(
-        function (event) {
-            event.target.querySelector('img').setAttribute('style', 'display: none');
+        (event) => {
+            $(event.target).find('img').css('display', 'none');
         }
     );

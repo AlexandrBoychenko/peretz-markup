@@ -40,11 +40,14 @@ $oswald-36: 36px Oswald, Sans-serif;
   cursor: pointer;
 }
 
-.list-burger li img {
-  display: none;
-  vertical-align: middle;
-  transform: rotate(-90deg);
-  margin: 0 15px;
+.list-burger li {
+  display: flex;
+  align-items: center;
+  img {
+    display: none;
+    transform: rotate(-90deg);
+    margin: 0 15px;
+  }
 }
 
 .social-bar {
