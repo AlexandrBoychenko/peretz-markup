@@ -5,7 +5,6 @@ header {
   width: 100%;
   display: block;
   z-index: 10;
-  background-color: #cf8b3b;
   padding: 0 160px;
   box-sizing: border-box;
 }
@@ -48,7 +47,6 @@ header .toggle-cart {
 }
 header .toggle-nav, header .toggle-cart {
   position: fixed;
-  top: 67.5px;
   height: 69px;
   right: 6%;
   padding: 20px;
@@ -134,6 +132,5 @@ header .toggle-nav, header .toggle-cart {
 }
 
 .toggle-nav:hover .toggle {
-  height: 15px;
   width: 25px;
 }

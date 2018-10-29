@@ -21,7 +21,9 @@ $(document).ready(function(){
         draggable: true,
         cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
         touchThreshold: 100,
-        prevArrow: `<div class="arrow left"><img src="img/arrow-left.png" alt="Здравфарм"></div>`,
-        nextArrow: `<div class="arrow right"><img src="img/arrow-right.png" alt="Здравфарм"></div>`
+        nextArrow: `<a class="arrow-down">
+                        <div class="line"></div>
+                        <img src="img/arrow-down.png" class="arrow-d" />
+                    </a>`
     });
 });
