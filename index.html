@@ -6,6 +6,10 @@
     <title>Peretz markup</title>
 
     <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 768px)" href="small.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1200px)" href="middle.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="large.css"/>
+
     <link rel="stylesheet" type="text/css" href="scripts/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="scripts/slick/slick-theme.css"/>
     <link rel="stylesheet" href="style/css/font-awesome.min.css">
@@ -15,33 +19,26 @@
 </head>
 <body>
 <div class="wrapper">
-    <header class="">
-        <div class="row">
-            <div class="col-10">
-                <div class="logo header-logo">
+    <header>
+                <div class="header-logo">
                     <a href="#">
-                        <img src="img/logo.png" alt="Nooflow - Absolute Mind" class="lazyloaded" data-was-processed="true"> </a>
-                </div>
-            </div>
-
-            <div class="col-2">
-                <div class="toggle-cart">
-                    <span></span>
-                    <div class="toggle-bag">
-                        <img src="img/basket.png" alt="корзина">
+                        <img src="img/logo.png" alt="ЗдравФарм лого" class="logo-main" data-was-processed="true">
+                    </a>
+                    <div class="toggle-cart">
+                        <span></span>
+                        <div class="toggle-bag">
+                            <img src="img/basket.png" alt="корзина">
+                        </div>
+                    </div>
+                    <div class="toggle-nav">
+                        <span></span>
+                        <div class="toggle">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="toggle-nav">
-                    <span></span>
-                    <div class="toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
 
     <section id="hero" class="show-me show">

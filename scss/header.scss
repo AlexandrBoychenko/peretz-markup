@@ -9,42 +9,19 @@ header {
   box-sizing: border-box;
 }
 
-.row {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-}
-
-[class*="col-"] {
-  position: relative;
-  float: left;
-}
-.col-10 {
-  width: 83.33%;
-}
-
-.loaded header .logo {
-  opacity: 1;
-  transform: translateX(0);
-  transition-delay: 1s;
-}
-
-.logo {
+.header-logo {
   z-index: 9;
 }
 
-[class*="col-"] {
-  position: relative;
-  float: left;
-}
-.col-2 {
-  width: 16.66%;
+.header-logo * {
+  display: inline-block;
 }
 
 header .toggle-cart {
   transform: translateX(-100px);
   -webkit-transform: translateX(-100px);
 }
+
 header .toggle-nav, header .toggle-cart {
   position: fixed;
   height: 69px;
@@ -55,7 +32,7 @@ header .toggle-nav, header .toggle-cart {
   transition: all .3s;
 }
 
-.toggle-nav>span, .toggle-cart>span {
+.toggle-nav > span, .toggle-cart > span {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -66,15 +43,15 @@ header .toggle-nav, header .toggle-cart {
   transition: all .3s;
 }
 
-.toggle-cart>span::before {
+.toggle-cart > span::before {
   content: 'корзина';
  }
 
-.toggle-nav>span::before {
+.toggle-nav > span::before {
   content: 'меню';
 }
 
-.toggle-nav>span::before, .toggle-cart>span::before {
+.toggle-nav > span::before, .toggle-cart > span::before {
   font-weight: bold;
   text-transform: uppercase;
   font: 16px 'Calibri',sans-serif;;

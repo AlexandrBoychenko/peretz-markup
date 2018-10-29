@@ -1,0 +1,53 @@
+.jar {
+    position: absolute;
+    margin-top: 130px;
+    left: -10%;
+    height: auto;
+    width: auto;
+}
+
+.text-content {
+    padding-top: 230px;
+    max-width: 0;
+}
+
+header {
+    top: auto;
+    padding: 20px 17px;
+    font-size: 0;
+}
+
+.logo-main {
+    width: 40px;
+    height: 30px;
+}
+
+.toggle-cart span, .toggle-nav > span {
+    display: none;
+}
+
+header .toggle-cart, header .toggle-nav {
+    padding: 0;
+    margin: auto;
+    right: auto;
+    height: auto;
+}
+
+.toggle-cart img, .toggle-nav img {
+    width: 19px;
+    height: 15px;
+}
+
+.col-10, .col-2 {
+    display: inline-block;
+}
+
+.col-10 {
+    width: 30%;
+}
+
+.col-2 {
+    height: 20px;
+    width: 70%;
+}
+
