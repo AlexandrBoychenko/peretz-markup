@@ -1,9 +1,14 @@
 .jar {
     position: absolute;
-    margin-top: 130px;
-    left: -10%;
     height: auto;
     width: auto;
+}
+
+.jar-img {
+    position: absolute;
+    min-width: 150%;
+    top: -3%;
+    left: -75%;
 }
 
 .text-content {
@@ -13,7 +18,7 @@
 
 header {
     top: auto;
-    padding: 20px 17px;
+    padding: 20px 0;
     font-size: 0;
 }
 
@@ -28,26 +33,31 @@ header {
 
 header .toggle-cart, header .toggle-nav {
     padding: 0;
-    margin: auto;
+    margin: 0;
     right: auto;
     height: auto;
 }
 
-.toggle-cart img, .toggle-nav img {
+.toggle-nav img {
     width: 19px;
     height: 15px;
 }
 
-.col-10, .col-2 {
-    display: inline-block;
-}
-
-.col-10 {
-    width: 30%;
-}
-
-.col-2 {
+.toggle-cart img {
+    width: 25px;
     height: 20px;
-    width: 70%;
 }
 
+.menu-wrapper {
+    margin: auto;
+    margin-top: 1.5%;
+    width: 70%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-link {
+    width: 30%;
+    padding-left: 17px;
+}
