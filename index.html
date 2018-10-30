@@ -6,41 +6,38 @@
     <title>Peretz markup</title>
 
     <link rel='stylesheet' href='style.css'>
-    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 768px)" href="mobile.css"/>
-    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1200px)" href="tablet.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 768px)" href="adaptive-styles/mobile.css"/>
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1200px)" href="adaptive-styles/tablet.css"/>
 
     <link rel="stylesheet" type="text/css" href="scripts/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="scripts/slick/slick-theme.css"/>
     <link rel="stylesheet" href="style/css/font-awesome.min.css">
-
-    <script type="text/javascript" src="scripts/app.js"></script>
-
 </head>
 <body>
 <div class="wrapper">
     <header>
-                <div class="header-logo">
-                    <a href="#" class="logo-link">
-                        <img src="img/logo.png" alt="ЗдравФарм лого" class="logo-main" data-was-processed="true">
-                    </a>
-                    <div class="menu-wrapper">
-                        <div class="toggle-cart">
-                            <span></span>
-                            <div class="toggle-bag">
-                                <img src="img/basket.png" alt="корзина">
-                            </div>
-                        </div>
-                        <div class="toggle-nav">
-                            <span></span>
-                            <div class="toggle">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
+        <div class="header-logo">
+            <a href="#" class="logo-link">
+                <img src="img/logo.png" alt="ЗдравФарм лого" class="logo-main" data-was-processed="true">
+            </a>
+            <div class="menu-wrapper">
+                <div class="toggle-cart">
+                    <span></span>
+                    <div class="toggle-bag">
+                        <img src="img/basket.png" alt="корзина">
                     </div>
                 </div>
-    </header>
+                <div class="toggle-nav">
+                    <span></span>
+                    <div class="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
 
     <section id="hero" class="show-me show">
         <p class="vertical-text">ПИЩЕВЫЕ ДОБАВКИ</p>
@@ -99,10 +96,219 @@
                 <img src="img/arrow-left.png" alt="Nooflow® Absolute Mind - Social Profile Links" class="lazyloading" data-was-processed="true">
             </div>
         </div>
-        <a class="phone" href="tel:0963336138">
+        <div class="phone">
             <img src="img/phone.png" alt="">
-        </a>
+        </div>
     </section>
+
+    <div class="wrapper-burger">
+        <div class="close-window burger-close">
+            <p>закрыть</p>
+            <img class = "close-sign" src="img/close-white.png" alt="">
+        </div>
+        <div class="wrapper-burger-list">
+            <ul class="list-burger">
+                <li>
+                    <img src="img/arrow-down.png" alt="">
+                    главная
+                </li>
+                <li>
+                    <img src="img/arrow-down.png" alt="">
+                    почему здравофарм
+                </li>
+                <li>
+                    <img src="img/arrow-down.png" alt="">
+                    магазин
+                </li>
+                <li>
+                    <img src="img/arrow-down.png" alt="">
+                    кто пользуется
+                </li>
+                <li>
+                    <img src="img/arrow-down.png" alt="">
+                    спонсоры
+                </li>
+                <li>
+                    <img src="img/arrow-down.png" alt="">
+                    наши клиенты
+                </li>
+                <li>
+                    <img src="img/arrow-down.png" alt="">
+                    продукция
+                </li>
+                <li>
+                    <img src="img/arrow-down.png" alt="">
+                    видео-отзывы
+                </li>
+                <li>
+                    <img src="img/arrow-down.png" alt="">
+                    мероприятия
+                </li>
+            </ul>
+            <ul class="social-bar">
+                <li>
+                    <img src="img/arrow-down.png" alt="">
+                    instagram
+                </li>
+                <li>
+                    <img src="img/arrow-down.png" alt="">
+                    telegram
+                </li>
+            </ul>
+            <ul class="lang-bar">
+                <li>ua</li>
+                <li>ru</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="pop-up">
+        <div class="pop-up-window basket">
+            <div class="close-window">
+                <p>закрыть</p>
+                <img class = "close-sign" src="img/close.png" alt="">
+            </div>
+            <div class="basket-wrapper">
+                <p class="basket-text">корзина</p>
+                <div class="make-order">
+                    <div class="scroll-bar">
+                        <div class="jar-item">
+                            <img src="img/jar-little.png" alt="" class="jar-little">
+                            <p class="jar-name">Гинкло Билоба</p>
+                            <div class="jars-quantity">
+                                <div class="minus">
+                                    <p>-</p>
+                                </div>
+                                <div class="jar-number">2 ШТ.</div>
+                                <div class="plus">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="jar-price">190 грн.</p>
+                            <img class = "close-sign" src="img/close.png" alt="">
+                        </div>
+                        <div class="jar-item">
+                            <img src="img/jar-little.png" alt="" class="jar-little">
+                            <p class="jar-name">Гинкло Билоба</p>
+                            <div class="jars-quantity">
+                                <div class="minus">
+                                    <p>-</p>
+                                </div>
+                                <div class="jar-number">2 ШТ.</div>
+                                <div class="plus">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="jar-price">190 грн.</p>
+                            <img class = "close-sign" src="img/close.png" alt="">
+                        </div>
+                        <div class="jar-item">
+                            <img src="img/jar-little.png" alt="" class="jar-little">
+                            <p class="jar-name">Гинкло Билоба</p>
+                            <div class="jars-quantity">
+                                <div class="minus">
+                                    <p>-</p>
+                                </div>
+                                <div class="jar-number">2 ШТ.</div>
+                                <div class="plus">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="jar-price">190 грн.</p>
+                            <img class = "close-sign" src="img/close.png" alt="">
+                        </div>
+                        <div class="jar-item">
+                            <img src="img/jar-little.png" alt="" class="jar-little">
+                            <p class="jar-name">Гинкло Билоба</p>
+                            <div class="jars-quantity">
+                                <div class="minus">
+                                    <p>-</p>
+                                </div>
+                                <div class="jar-number">2 ШТ.</div>
+                                <div class="plus">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="jar-price">190 грн.</p>
+                            <img class = "close-sign" src="img/close.png" alt="">
+                        </div>
+                        <div class="jar-item">
+                            <img src="img/jar-little.png" alt="" class="jar-little">
+                            <p class="jar-name">Гинкло Билоба</p>
+                            <div class="jars-quantity">
+                                <div class="minus">
+                                    <p>-</p>
+                                </div>
+                                <div class="jar-number">2 ШТ.</div>
+                                <div class="plus">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="jar-price">190 грн.</p>
+                            <img class = "close-sign" src="img/close.png" alt="">
+                        </div>
+                        <div class="jar-item">
+                            <img src="img/jar-little.png" alt="" class="jar-little">
+                            <p class="jar-name">Гинкло Билоба</p>
+                            <div class="jars-quantity">
+                                <div class="minus">
+                                    <p>-</p>
+                                </div>
+                                <div class="jar-number">2 ШТ.</div>
+                                <div class="plus">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="jar-price">190 грн.</p>
+                            <img class = "close-sign" src="img/close.png" alt="">
+                        </div>
+                        <div class="jar-item">
+                            <img src="img/jar-little.png" alt="" class="jar-little">
+                            <p class="jar-name">Гинкло Билоба</p>
+                            <div class="jars-quantity">
+                                <div class="minus">
+                                    <p>-</p>
+                                </div>
+                                <div class="jar-number">2 ШТ.</div>
+                                <div class="plus">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                            <p class="jar-price">190 грн.</p>
+                            <img class = "close-sign" src="img/close.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <p class="order-header">оформление заказа</p>
+                        <form class="order-inputs">
+                            <input type="text" placeholder="ИМЯ" class="order-name">
+                            <input type="text" placeholder="ТЕЛЕФОН" class="order-phone">
+                            <input type="text" placeholder="АДРЕС ДОСТАВКИ НОВОЙ ПОЧТОЙ" class="order-phone">
+                            <div class="right-cont-bottom">
+                                <p>Итого: <span>10 000 грн.</span></p>
+                                <button class="pop-up-btn">заказать</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="pop-up-call">
+        <div class="pop-up-window">
+            <div class="close-window">
+                <p>закрыть</p>
+                <img class = "close-sign" src="img/close.png" alt="">
+            </div>
+            <p class="order-call-text">заказать звонок</p>
+            <form class="order-inputs">
+                <input type="text" placeholder="ИМЯ" class="order-name">
+                <input type="text" placeholder="ТЕЛЕФОН" class="order-phone">
+                <button class="pop-up-btn">заказать</button>
+            </form>
+        </div>
+    </div>
     <div class="content"></div>
 </div>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

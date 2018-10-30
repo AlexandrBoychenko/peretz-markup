@@ -1,9 +1,12 @@
 $oswald-36: 36px Oswald, Sans-serif;
 
 .wrapper-burger {
-  position: relative;
-  height: 1045px;
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 100;
   width: 50%;
+  height: 1024px;
   margin-left: 50%;
   opacity: 0.9;
   background: #833c40 $triangle-back no-repeat 0/cover;
@@ -34,13 +37,13 @@ $oswald-36: 36px Oswald, Sans-serif;
   font: $oswald-36;
 }
 
-.list-burger li:hover {
+.list-burger li:hover, .social-bar li:hover {
   font-weight: bold;
   color: #cf8b3b;
   cursor: pointer;
 }
 
-.list-burger li {
+.list-burger li, .social-bar li {
   display: flex;
   align-items: center;
   img {

@@ -1,17 +1,21 @@
 $triangle-back:   url(img/background-triangle.png);
 
-.pop-up {
+.pop-up, .pop-up-call {
+  display: none;
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.64);
-  display: flex;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .pop-up-window {
   position: relative;
   display: block;
-  top: 30vh;
+  top: 5vh;
   width: 875px;
   height: 617px;
   background: #ffffff;
@@ -269,4 +273,8 @@ $triangle-back:   url(img/background-triangle.png);
 .sold {
   width: 993px;
   height: 625px;
+}
+
+.call-block {
+  display: none;
 }

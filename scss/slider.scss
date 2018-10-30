@@ -104,6 +104,7 @@
   font: 16px "Calibri", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .side-label.slide-control {
@@ -304,6 +305,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .phone > a > img {
