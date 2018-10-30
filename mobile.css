@@ -177,3 +177,7 @@ header .toggle-cart, header .toggle-nav {
     top: 48%;
 }
 
+.slick-list div:nth-child(3) img {
+    left: 350px;
+}
+
