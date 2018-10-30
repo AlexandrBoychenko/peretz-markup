@@ -16,6 +16,23 @@
     max-width: 0;
 }
 
+.content-text {
+    font-size: 34px;
+}
+
+.additional-text {
+    font-size: 12px;
+}
+
+.subscribe {
+    font-size: 9px;
+}
+
+.social-arrow {
+    width: 10px;
+    height: 8px;
+}
+
 header {
     top: auto;
     padding: 20px 0;
@@ -61,3 +78,100 @@ header .toggle-cart, header .toggle-nav {
     width: 30%;
     padding-left: 17px;
 }
+
+#hero {
+    background: url(img/background-triangle.png) no-repeat;
+    background-size: 200%;
+    background-position-x: 71%;
+    min-height: 570px;
+}
+
+.text-content, .content-text {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+}
+
+.text-content {
+    padding: 105% 16px 0;
+}
+
+.side-label {
+    top: 30%;
+}
+
+.side-label::after, .side-label::before {
+    height: 15px;
+}
+
+.vertical-text {
+    display: none;
+}
+
+.additional-text {
+    margin-top: 15px;
+}
+
+.content-text::after {
+    margin-top: 18px;
+}
+
+.side-label::before {
+    top: 36px;
+}
+
+.slide-control span {
+    margin: 20px 0;
+}
+
+#hero .follow {
+    top: 45%;
+    right: -3%;
+    bottom: auto;
+}
+
+.basic-social {
+    padding: 0;
+}
+
+.arrow-down {
+    top: 30%;
+    bottom: auto;
+    left: auto;
+}
+
+.side-label::after {
+    top: 70px;
+}
+
+.in-store-btn {
+    width: 127px;
+    height: 31px;
+    font: 10px "Calibri", sans-serif;
+    margin-top: 15px;
+}
+
+.phone {
+    width: 35px;
+    height: 35px;
+    right: 17px;
+}
+
+.phone img {
+    max-width: 50%;
+}
+
+.arrow-down .line {
+    width: 32px;
+    height: 1px;
+}
+
+.arrow-d {
+    width: 10px;
+    height: 8px;
+}
+
+.arrow-down {
+    top: 48%;
+}
+
