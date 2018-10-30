@@ -80,7 +80,7 @@ header .toggle-cart, header .toggle-nav {
 }
 
 #hero {
-    background: url(img/background-triangle.png) no-repeat;
+    background: url(../img/background-triangle.png) no-repeat;
     background-size: 200%;
     background-position-x: 71%;
     min-height: 570px;
