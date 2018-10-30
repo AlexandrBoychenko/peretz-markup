@@ -1,3 +1,7 @@
+.wrapper {
+    height: auto;
+}
+
 .jar {
     position: absolute;
     height: auto;
@@ -181,3 +185,42 @@ header .toggle-cart, header .toggle-nav {
     left: 350px;
 }
 
+.social-bar {
+    margin-top: 18px;
+}
+
+.list-burger li, .social-bar li {
+    font-size: 18px;
+}
+
+.wrapper-burger {
+    padding: 20px 40px;
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.wrapper-burger-list {
+    padding-top: 10px;
+}
+
+.burger-close > p {
+    font-size: 10px;
+}
+
+.close-sign {
+    height: 10px;
+    width: 10px;
+}
+
+.lang-bar li {
+    font-size: 18px;
+    line-height: inherit;
+}
+
+.lang-bar {
+    position: absolute;
+    line-height: 20px;
+    bottom: 35px;
+    right: 15px;
+}
