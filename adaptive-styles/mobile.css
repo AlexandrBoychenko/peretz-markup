@@ -224,3 +224,100 @@ header .toggle-cart, header .toggle-nav {
     bottom: 35px;
     right: 15px;
 }
+
+.scroll-bar, .right-content {
+    display: block;
+}
+
+.scroll-bar {
+    width: 100%;
+    height: 315px;
+}
+
+.pop-up {
+    width: auto;
+}
+
+.basket-text {
+    font-size: 34px;
+}
+
+.jar-item {
+    position: relative;
+    width: 100%;
+    padding: 28px 10px 42px 0;
+}
+
+.order-name::placeholder, .order-phone::placeholder
+{
+    font-size: 10px;
+    padding: 0;
+    color: rgba(68, 68, 67, 0.33);
+}
+
+input {
+    padding-left: 20px;
+    color: rgba(68, 68, 67, 1);
+    font: 10px Calibri, sans-serif;
+}
+
+.jars-quantity {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 15px 0 10px;
+}
+
+.jar-name, .jar-price {
+    font-size: 12px;
+}
+
+.jar-name {
+    margin: 0 20px;
+}
+
+.jar-number {
+    font-size: 10px;
+}
+
+.jar-price {
+    padding: 0 25px 0 15px;
+}
+
+.basket-wrapper {
+    padding: 0;
+}
+
+.basket, .pop-up-window {
+    width: auto;
+    height: auto;
+}
+
+.make-order {
+    height: auto;
+    margin-top: 55px;
+    padding: 15px 15px 30px;
+    background: #ffffff;
+}
+
+.order-inputs {
+    width: 100%;
+}
+
+.order-inputs * {
+    width: 100%;
+}
+
+.right-content {
+    padding: 50px 0 20px 0;
+    width: auto;
+}
+
+.right-content input {
+    width: 250px;
+    height: 30px;
+}
+
+.right-content > .order-header {
+    font-size: 20px;
+}
