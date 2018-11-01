@@ -1,0 +1,62 @@
+.why {
+  position: relative;
+  background: #eceaea;
+  padding: 200px 0;
+  font-size: 0;
+}
+
+.left-info {
+  display: inline-block;
+  /*position: absolute;*/
+}
+
+.left-info > .vertical-text {
+  position: static;
+}
+
+.why-main {
+  display: inline-block;
+  margin: 0 150px 0 280px;
+}
+
+.why-head {
+  font: 77px Oswald, sans-serif;
+  color: #444443;
+  padding-bottom: 60px;
+}
+
+.why-info-left, .why-info-right {
+  display: inline-block;
+  width: 50%;
+  padding-right: 40px;
+}
+
+.why-left-par {
+  font: 36px Oswald, sans-serif;
+  color: #444443;
+  padding-bottom: 80px;
+}
+
+.why-left-par:nth-child(4) {
+  padding-bottom: 0;
+}
+
+.why-left-par::before {
+  display: inline-block;
+  vertical-align: super;
+  margin: 10px 15px 0 -35px;
+  width: 20px;
+  height: 2px;
+  background: #f2ab1f;
+  content: "";
+}
+
+.why-right-par {
+  padding-bottom: 35px;
+  font: 24px Calibri, sans-serif;
+  color: #444443;
+}
+
+.why-right-par:nth-child(4) {
+  padding-bottom: 0;
+}
