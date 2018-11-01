@@ -1,0 +1,127 @@
+.toggle-cart span, .toggle-nav > span {
+    display: inline-block;
+    font-size: 12px;
+}
+
+header {
+    padding: 70px 0;
+}
+
+.logo-main {
+    width: 110px;
+    height: 75px;
+}
+
+.jar {
+    height: 420px;
+    left: auto;
+}
+
+.jar-img {
+    margin: 10% 65%;
+    min-width: 0;
+}
+
+.content-text {
+    font-size: 47px;
+}
+
+.text-content {
+    padding: 70% 65px 70px;
+}
+
+.additional-text {
+    font-size: 16px;
+}
+
+.in-store-btn {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.menu-wrapper {
+    margin-top: 2.5%;
+    margin-left: 33%;
+    width: 35%;
+}
+
+#hero .follow {
+    top: 45%;
+    right: 0;
+}
+
+.subscribe {
+    font-size: 12px;
+}
+
+.phone {
+    bottom: 10%;
+}
+
+.jars-quantity {
+    position: static;
+}
+
+.jar-name {
+    margin: 0 50px;
+    font-size: 16px;
+}
+
+.jar-price {
+    padding: 0 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.right-content > .order-header {
+    font-size: 22px;
+}
+
+.right-content input {
+    width: 97%;
+    height: 45px;
+}
+
+.order-inputs * {
+    width: auto;
+}
+
+.pop-up-btn {
+    width: 190px;
+    height: 45px;
+}
+
+.right-cont-bottom {
+    margin-left: 41%;
+}
+
+.wrapper-burger {
+    height: 160%;
+}
+
+.burger-close > p {
+    font-size: 12px;
+}
+
+.list-burger li, .social-bar li {
+    font-size: 30px;
+}
+
+.lang-bar li {
+    font-size: 22px;
+    line-height: inherit;
+}
+
+.order-inputs * {
+     width: 335px;
+     height: 45px;
+}
+
+.order-inputs {
+    width: 90%;
+    margin: auto;
+}
+
+.pop-up-btn {
+    width: 195px;
+}
