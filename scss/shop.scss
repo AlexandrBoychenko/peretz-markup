@@ -1,0 +1,190 @@
+.shop {
+  position: relative;
+  font-size: 0;
+}
+
+.shop-left {
+  display: inline-block;
+  max-width: 45%;
+  /*padding-left: 95px;
+  padding-right: 45px;*/
+}
+
+.item-description {
+  display: inline-block;
+}
+
+.items-block {
+  background: #4299ca url("img/triangle-shop.png");
+}
+
+.shop-left > h1 {
+  padding-bottom: 65px;
+  text-align: center;
+}
+
+.items-block {
+  padding: 75px 30px 100px 115px;
+  /*padding: 75px 50px 100px 215px;*/
+}
+
+.side-shop-text::before {
+  left: -40%
+}
+
+.side-shop-text::after {
+  left: 140%
+}
+
+.shop-buttons {
+  font-size: 0;
+}
+
+.shop-btn {
+  display: inline-block;
+  width: 148px;
+  font: 16px Calibri, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  background: #4299ca;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 3% 0;
+}
+
+.shop-btn:first-child {
+  background: #ffffff;
+  border: none;
+  color: #444443;
+}
+
+.shop-btn:last-child {
+  margin-right: 0;
+}
+
+.shop-items {
+  padding-top: 50px;
+}
+
+.shop-item {
+  /*padding: 40px 70px 0 0;*/
+  padding-top: 55px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.shop-item:nth-child(3) {
+  padding-right: 0;
+}
+
+img.shp-item-img {
+  width: 85px;
+  height: 140px;
+}
+
+.shop-item-name {
+  padding-top: 10px;
+  font: 24px Calibri, sans-serif;
+  color: #ffffff;
+}
+
+.item-description {
+  /*padding: 55px 160px 20px 70px;*/
+  vertical-align: top;
+  font-size: 0;
+  max-width: 55%
+}
+
+.shop-list > h2 {
+  padding-bottom: 70px;
+}
+
+.shop-photo > img {
+  //padding-right: 60px;
+  width: 400px;
+  height: 300px;
+}
+
+.shop-photo {
+  max-width: 40%;
+  vertical-align: middle;
+}
+
+.shop-info {
+  max-width: 60%;
+  vertical-align: middle;
+}
+
+.shop-info > h2 {
+  padding-top: 185px;
+  padding-bottom: 80px;
+}
+
+.shop-photo, .shop-info {
+  display: inline-block;
+}
+
+.shop-arrow {
+  display: inline-block;
+  font: 24px Calibri, sans-serif;
+}
+
+.arrows {
+  text-align: center;
+  cursor: pointer;
+}
+
+.shop-right {
+  padding-left: 95px;
+}
+
+.shop-list-item, .list-descr {
+  font: 24px Calibri, sans-serif;
+  color: #444443;
+  font-weight: 100;
+}
+
+.shop-list-item {
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.shop-list {
+  padding: 0 50px;
+}
+
+.shop-price {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  font: 36px Oswald, sans-serif;
+  font-weight: bold;
+  color: #444443;
+}
+
+.shop-quantity {
+  display: block;
+}
+
+.shop-quantity > * {
+  display: inline-block;
+}
+
+.shop-quantity {
+  .minus, .plus {
+    background: #ffffff;
+    text-align: center;
+  }
+}
+
+.shop-main-btn {
+  background: #4299ca;
+  margin: 30px 0;
+}
+
+#tab1, #tab2, #tab3 {
+  display: none;
+}

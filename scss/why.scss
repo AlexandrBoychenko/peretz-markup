@@ -1,13 +1,11 @@
 .why {
   position: relative;
-  background: #eceaea;
   padding: 200px 0;
   font-size: 0;
 }
 
 .left-info {
   display: inline-block;
-  /*position: absolute;*/
 }
 
 .left-info > .vertical-text {
@@ -16,7 +14,7 @@
 
 .why-main {
   display: inline-block;
-  margin: 0 150px 0 280px;
+  margin: 0 150px 0 200px;
 }
 
 .why-head {
@@ -41,7 +39,8 @@
   padding-bottom: 0;
 }
 
-.why-left-par::before {
+.why-left-par::before,
+.shop-list-item::before {
   display: inline-block;
   vertical-align: super;
   margin: 10px 15px 0 -35px;

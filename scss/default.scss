@@ -46,21 +46,29 @@ button {
   background-color: #cf8b3b;
 }
 
+.grey-div {
+  background: #eceaea;
+}
+
 h1, h2, h3, h4, h5, p {
   color: #000000;
   margin: 0px;
 }
 
 h1 {
-  font-size: 38px;
+  font-size: 77px;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: 48px;
+  font-family: Calibri, sans-serif;
   font-weight: 700;
   line-height: 1.08;
 }
 
 ul {
   list-style-type: none;
-}
-
-h2 {
-  font-size: 25px;
 }
