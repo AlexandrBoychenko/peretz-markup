@@ -16,6 +16,7 @@
 
 .items-block {
   background: #4299ca url("img/triangle-shop.png");
+  height: 1300px;
 }
 
 .shop-left > h1 {
@@ -55,14 +56,14 @@
   padding: 3% 0;
 }
 
+.shop-btn:last-child {
+  margin-right: 0;
+}
+
 .shop-btn:first-child {
   background: #ffffff;
   border: none;
   color: #444443;
-}
-
-.shop-btn:last-child {
-  margin-right: 0;
 }
 
 .shop-items {
@@ -82,7 +83,7 @@
 }
 
 img.shp-item-img {
-  width: 85px;
+  width: 100px;
   height: 140px;
 }
 
@@ -186,5 +187,15 @@ img.shp-item-img {
 }
 
 #tab1, #tab2, #tab3 {
+  display: none;
+}
+
+#tab1:checked ~ .capsules,
+#tab2:checked ~ .closes,
+#tab3:checked ~ .tablets {
+  display: block;
+}
+
+.capsules, .closes, .tablets {
   display: none;
 }
