@@ -511,9 +511,9 @@ a {
 }
 
 .pop-up-window {
-  position: relative;
+  position: fixed;
   display: block;
-  top: 5vh;
+  top: 3vh;
   width: 875px;
   height: 617px;
   background: #ffffff;
@@ -616,7 +616,7 @@ a {
 }
 
 .basket {
-  width: 1460px;
+  width: 1360px;
   height: 775px;
 }
 
@@ -780,10 +780,10 @@ a {
 .wrapper-burger {
   display: none;
   position: absolute;
+  padding: 20px 80px 30px 130px;
   top: 0;
   z-index: 100;
   width: 50%;
-  height: 1024px;
   margin-left: 50%;
   opacity: 0.9;
   background: #833c40 url(img/background-triangle.png) no-repeat 0/cover;
@@ -798,10 +798,6 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   font-size: 16px;
-}
-
-.wrapper-burger {
-  padding: 20px 80px 30px 130px;
 }
 
 .wrapper-burger-list {
@@ -941,9 +937,7 @@ a {
 
 .shop-left {
   display: inline-block;
-  max-width: 45%;
-  /*padding-left: 95px;
-  padding-right: 45px;*/
+  width: 45%;
 }
 
 .item-description {

@@ -3,10 +3,10 @@ $oswald-36: 36px Oswald, Sans-serif;
 .wrapper-burger {
   display: none;
   position: absolute;
+  padding: 20px 80px 30px 130px;
   top: 0;
   z-index: 100;
   width: 50%;
-  height: 1024px;
   margin-left: 50%;
   opacity: 0.9;
   background: #833c40 $triangle-back no-repeat 0/cover;
@@ -21,10 +21,6 @@ $oswald-36: 36px Oswald, Sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 16px;
-}
-
-.wrapper-burger {
-  padding: 20px 80px 30px 130px;
 }
 
 .wrapper-burger-list {

@@ -13,9 +13,9 @@ $triangle-back:   url(img/background-triangle.png);
 }
 
 .pop-up-window {
-  position: relative;
+  position: fixed;
   display: block;
-  top: 5vh;
+  top: 3vh;
   width: 875px;
   height: 617px;
   background: #ffffff;
@@ -118,7 +118,7 @@ $triangle-back:   url(img/background-triangle.png);
 }
 
 .basket {
-  width: 1460px;
+  width: 1360px;
   height: 775px;
 }
 
