@@ -4,7 +4,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 10;
-  padding: 0 160px;
+  padding: 0 8rem;
   box-sizing: border-box;
 }
 
@@ -12,17 +12,12 @@ header {
   z-index: 9;
 }
 
+img.logo-main {
+  max-width: 70%;
+}
+
 .header-logo > * {
   display: inline-block;
-}
-
-.menu-wrapper {
-  margin: 25px 30px 0 55%;
-}
-
-.menu-wrapper > * {
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .toggle-cart {
@@ -37,6 +32,11 @@ header .toggle-nav, header .toggle-cart {
 .menu-wrapper {
   position: fixed;
   cursor: pointer;
+  right: 3.5rem;
+  top: 45px;
+  display: flex;
+  align-items: center;
+  height: 73px;
 }
 
 .toggle-nav > span, .toggle-cart > span {

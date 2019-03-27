@@ -54,8 +54,8 @@
 .jar-img {
   position: absolute;
   width: 100%;
-  height: 100%;
   top: 0;
+  z-index: -1;
 }
 
 .text-content {
@@ -81,7 +81,7 @@
 
 .additional-text {
   font: 24px "Calibri", sans-serif;
-  margin-top: 60px;
+  margin-top: 2rem;
   color: #444443;
   max-width: 525px;
 }
@@ -95,7 +95,7 @@
 }
 
 .in-store-btn {
-  margin-top: 64px;
+  margin-top: 2rem;
   width: 260px;
   height: 60px;
   border-radius: 50px;
@@ -228,10 +228,10 @@
   }
 }
 
-#hero .follow {
+.follow {
   position: absolute;
-  bottom: 220px;
-  right: 70px;
+  right: 0.3%;
+  top: 80%;
   z-index: 8;
   transition: all 0.8s cubic-bezier(.165,.84,.44,1);
   cursor: pointer;
@@ -271,16 +271,14 @@ a {
   color: inherit;
 }
 
-.social {
-  display: none;
-}
-
-.basic-social * {
+.basic-social *,  .social * {
   display: inline-block;
 }
 
-.basic-social {
+.basic-social * {
   padding: 5px;
+  font-size: 20px;
+  vertical-align: middle;
 }
 
 .subscribe {
