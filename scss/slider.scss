@@ -1,5 +1,6 @@
 #hero {
   width: 100%;
+  height: 100vh;
   background: url(img/background.png) no-repeat;
   background-size: cover;
   background-position-x: 50%;
@@ -11,14 +12,17 @@
   height: 100%;
 }
 
-.slick-prev {
-  left: 0;
-  top: 35%;
+.slick-arrow.slick-prev, .slick-arrow.slick-next {
+  z-index: 100;
+  top: calc(50% - 20px/2);
 }
 
-.slick-next {
-  right: 0;
-  top: 35%;
+.slick-arrow.slick-prev {
+  left: 1.5%;
+}
+
+.slick-arrow.slick-next {
+  right: 1.5%;
 }
 
 .arrow {
@@ -115,8 +119,9 @@
 
 .side-label {
   position: absolute;
-  top: 50%;
-  right: 4%;
+  text-align: center;
+  top: calc(50% - 242px/23);
+  right: 4.15%;
   color: #4c5758;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -130,7 +135,6 @@
   position: absolute;
   width: 1px;
   height: 30px;
-  left: 7px;
   background-color: #4c5758;
 }
 
@@ -207,7 +211,7 @@
 .arrow-down {
   position: absolute;
   bottom: 50px;
-  left: 48.6%;
+  left: calc(50% - 61px/3.3);
   transform: rotate(-270deg);
   z-index: 100;
 
@@ -230,7 +234,7 @@
 
 .follow {
   position: absolute;
-  right: 0.3%;
+  right: 0;
   top: 80%;
   z-index: 8;
   transition: all 0.8s cubic-bezier(.165,.84,.44,1);
@@ -296,14 +300,18 @@ a {
   text-align: center;
   width: 55px;
   height: 55px;
-  bottom: 47px;
-  right: 100px;
+  bottom: 3rem;
+  right: 7rem;
   border-radius: 50%;
   background: #444443;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.phone:hover {
+  background: #2d2d2d
 }
 
 .phone > a > img {
