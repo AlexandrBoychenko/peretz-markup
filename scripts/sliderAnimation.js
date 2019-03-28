@@ -1,74 +1,89 @@
-(function() {
-    let direction;
+$(function(){
     let currentIndex;
-    let i = 1;
+    let i = 0;
+
     let slides = $('.slide-control').children();
-    $(`.b-slide-0${i}`).attr('data-selector', 'active-number');
-    $(".slider").on("beforeChange", function (){
-
-
-    });
+    $(`[data-id = ${i}]`).attr('data-selector', 'active-number');
 
     addEventsToNumbers(slides.length);
+    setSlider();
+
+
+    $('.slider').click(function(e) {
+        removeActiveElement();
+        checkCurrentIndex();
+
+        if (searchClass(e, 'slick-prev')) {
+            goBackward();
+        }
+        else if (searchClass(e, 'slick-next')) {
+            goForward()
+        }
+    });
+
+    function goBackward() {
+        i === 0 ? i = 3: null;
+        $(`[data-id = ${i - 1}]`).attr('data-selector', 'active-number');
+        i--;
+    }
+
+    function goForward() {
+        i++;
+        i === slides.length ? i = 0: null;
+        $(`[data-id = ${i}]`).attr('data-selector', 'active-number');
+
+    }
+        
+    function checkCurrentIndex() {
+        currentIndex !== undefined ? i = currentIndex : null;
+        currentIndex = undefined;
+    }
+        
+    function removeActiveElement() {
+        let remElement = $("[data-selector='active-number']");
+        remElement.removeAttr('data-selector');
+    }
+    
+    function searchClass(e, className) {
+        return ~e.target.className.indexOf(className)
+    }
 
     function addEventsToNumbers(slidesLength) {
         for (let i = 0; i < slidesLength; i++) {
             $(`[data-id = ${i}]`).click((e) => {
-                e.preventDefault();
-                $(`.slider`).slick('slickGoTo', i);
-                $(`[data-id = ${i}]`).attr('data-selector', 'active-number');
-                removeRedundantAttr(slidesLength, i);
-                currentIndex = i;
+                markClickedNumber(e, slidesLength, i);
             })
         }
     }
 
-        $('.slider').click(function(e) {
-            if (~e.target.className.indexOf('slick-prev')) {
-                direction = 'backward';
-            }
-            if (~e.target.className.indexOf('slick-next')) {
-                direction = 'forward';
-            }
-
-            currentIndex ? i = currentIndex + 1 : null;
-            currentIndex = 0;
-
-            let remElement = $("[data-selector='active-number']");
-            remElement.removeAttr('data-selector');
-
-            if (direction === 'forward') {
-                i === slides.length ? i = 0: null;
-                $(`.b-slide-0${i + 1}`).attr('data-selector', 'active-number');
-                i++;
-            } else {
-                i === 1 ? i = 4: null;
-                $(`.b-slide-0${i - 1}`).attr('data-selector', 'active-number');
-                i--;
-            }
-        })
-}());
-
-
-
-function removeRedundantAttr(slidesLength, index) {
-    for (let i = 0; i < slidesLength; i++) {
-        if (i !== index) {
-            $(`[data-id = ${i}]`).removeAttr('data-selector');
-        }
-
+    function markClickedNumber(e, slidesLength, index) {
+        e.preventDefault();
+        $(`.slider`).slick('slickGoTo', index);
+        $(`[data-id = ${index}]`).attr('data-selector', 'active-number');
+        removeRedundantAttr(slidesLength, index);
+        currentIndex = index;
     }
-}
 
-$(document).ready(function(){
-    $('.slider').slick({
-        infinite: true,
-        speed: 900,
-        fade: true,
-        /*autoplay: true,*/
-        autoplaySpeed: 3000,
-        draggable: true,
-        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
-        touchThreshold: 100
-    });
+    function removeRedundantAttr(slidesLength, index) {
+        for (let i = 0; i < slidesLength; i++) {
+            if (i !== index) {
+                $(`[data-id = ${i}]`).removeAttr('data-selector');
+            }
+        }
+    }
+
+    function setSlider() {
+        $('.slider').slick({
+            infinite: true,
+            speed: 900,
+            fade: true,
+            autoplaySpeed: 3000,
+            draggable: true,
+            cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+            touchThreshold: 100
+        });
+    }
+
 });
+
+
