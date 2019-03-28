@@ -12,8 +12,8 @@ let changeStyles = {
 };
 
 $(document).on('scroll', function() {
-    if( $(this).scrollTop() >= targetDiv.position().top - 180
-    && $(this).scrollTop() <= targetDiv.position().top - 160){
+    if( $(this).scrollTop() >= $('.why').offset().top
+    && $(this).scrollTop() <= targetDiv.position().top + 3){
         targetDiv.find('.enter-x-r').css(beginStyles);
         setTimeout(() => {targetDiv.find('.enter-x-r').css(changeStyles)}, 500);
     }
