@@ -1,28 +1,12 @@
 (function() {
-    let currentIndex;
     let direction;
-    let i = (currentIndex) ? currentIndex : 1;
+    let currentIndex;
+    let i = 1;
     let slides = $('.slide-control').children();
     $(`.b-slide-0${i}`).attr('data-selector', 'active-number');
     $(".slider").on("beforeChange", function (){
-        let remElement = $("[data-selector='active-number']");
-        remElement.removeAttr('data-selector');
 
-        checkDirection();
 
-        if (direction === 'forward') {
-            i === slides.length ? i = 0: null;
-            $(`.b-slide-0${i + 1}`).attr('data-selector', 'active-number');
-            i++;
-        } else {
-            i === 0 ? i = 3: null;
-            $(`.b-slide-0${i - 1}`).attr('data-selector', 'active-number');
-            i--;
-        }
-    });
-
-    $('.slick-prev').mouseup(function() {
-        direction = 'forward'
     });
 
     addEventsToNumbers(slides.length);
@@ -39,9 +23,30 @@
         }
     }
 
-    function checkDirection() {
-        i > currentIndex ? direction = 'forward' : 'downward';
-    }
+        $('.slider').click(function(e) {
+            if (~e.target.className.indexOf('slick-prev')) {
+                direction = 'backward';
+            }
+            if (~e.target.className.indexOf('slick-next')) {
+                direction = 'forward';
+            }
+
+            currentIndex ? i = currentIndex + 1 : null;
+            currentIndex = 0;
+
+            let remElement = $("[data-selector='active-number']");
+            remElement.removeAttr('data-selector');
+
+            if (direction === 'forward') {
+                i === slides.length ? i = 0: null;
+                $(`.b-slide-0${i + 1}`).attr('data-selector', 'active-number');
+                i++;
+            } else {
+                i === 1 ? i = 4: null;
+                $(`.b-slide-0${i - 1}`).attr('data-selector', 'active-number');
+                i--;
+            }
+        })
 }());
 
 
