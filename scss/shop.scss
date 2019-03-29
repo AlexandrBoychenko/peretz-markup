@@ -30,6 +30,7 @@
   top:10%;
   bottom:0;
   width: 45%;
+  height: 100%;
 }
 
 .side-shop-text {
@@ -46,6 +47,7 @@
 
 .shop-buttons {
   font-size: 0;
+  text-align: center;
 }
 
 .shop-btn {
@@ -73,11 +75,12 @@
   color: #444443;
 }
 
-.shop-items {
+div.shop-items .capsules {
   padding-top: 50px;
 }
 
 .shop-item {
+  width: 9.5rem;
   padding-top: 55px;
   text-align: center;
   display: inline-block;
@@ -88,15 +91,10 @@
   padding-right: 0;
 }
 
-img.shp-item-img {
-  width: 100px;
-  height: 140px;
-}
-
 .shop-item-name {
-  padding-top: 10px;
-  font: 24px Calibri, sans-serif;
+  font: 21px Calibri, sans-serif;
   color: #ffffff;
+  padding: 10px 3px 0;
 }
 
 .item-description {
