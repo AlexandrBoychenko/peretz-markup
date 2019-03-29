@@ -30,7 +30,7 @@
   top:10%;
   bottom:0;
   width: 45%;
-  height: 100%;
+  height: 103%;
 }
 
 .side-shop-text {
@@ -80,11 +80,27 @@ div.shop-items .capsules {
 }
 
 .shop-item {
-  width: 9.5rem;
+  position: relative;
+  width: 32%;
+  height: 18rem;
+  margin-right: 2%;
   padding-top: 55px;
   text-align: center;
   display: inline-block;
   cursor: pointer;
+}
+
+.shop-item:nth-child(3n) {
+  margin-right: 0
+}
+
+.shop-img {
+  position: absolute;
+  bottom: 0;
+}
+
+.shop-items {
+  padding-bottom: 50px;
 }
 
 .shop-item:nth-child(3) {
@@ -177,6 +193,7 @@ div.shop-items .capsules {
 
 .shop-quantity > * {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .shop-quantity {

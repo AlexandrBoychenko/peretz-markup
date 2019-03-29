@@ -19,7 +19,23 @@ $('.shop-item').click((event) => {
         $('.shop-photo > img').attr('src', `${image}`);
 
         $('.shop-item').css('background', 'transparent');
-        $(event.target.parentNode).css('background', '#a6b1c1');
+        $(event.target.parentNode.parentNode).css('background', '#a6b1c1');
     }
 });
 
+$('.shop-arrow').click((event) => {
+    let images = $('.items-block').find('.capsules');
+    let currentImage = $('.shop-photo > img').attr('src');
+    let currentImgNumber = currentImage.match(/\d+/)[0];
+    if (~event.target.className.indexOf('shop-forward')) {
+        let currentNumber = parseInt(currentImgNumber) + 1;
+        if (currentNumber < images.length - 1) {
+            $('.shop-photo > img').attr('src', `${currentImage.replace(/\d+/, '' + currentNumber)}`)
+        }
+    } else {
+        let currentNumber = parseInt(currentImgNumber) - 1;
+        if (currentNumber >= 0) {
+            $('.shop-photo > img').attr('src', `${currentImage.replace(/\d+/, '' + currentNumber)}`)
+        }
+    }
+})
