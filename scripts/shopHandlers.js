@@ -24,7 +24,7 @@ $('.shop-item').click((event) => {
 });
 
 $('.shop-arrow').click((event) => {
-    let images = $('.items-block').find('.capsules');
+    let images = $('.items-block').find('.shop-item');
     let currentImage = $('.shop-photo > img').attr('src');
     let currentImgNumber = currentImage.match(/\d+/)[0];
     if (~event.target.className.indexOf('shop-forward')) {
