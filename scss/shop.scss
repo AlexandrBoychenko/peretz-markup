@@ -8,11 +8,15 @@
   width: 45%;
 }
 
+.shop-left h2 {
+  font: 56px Oswald, sans-serif
+}
+
 .item-description {
   display: inline-block;
 }
 
-.shop-left > h1 {
+.shop-left > h2 {
   padding-bottom: 65px;
   text-align: center;
 }
@@ -21,8 +25,15 @@
   background: #4299ca url("img/triangle-shop.png");
   padding: 75px 30px 100px 115px;
   position: absolute;
+  left:0;
+  right:0;
+  top:10%;
+  bottom:0;
   width: 45%;
-  z-index: -1;
+}
+
+.side-shop-text {
+  z-index: 1;
 }
 
 .side-shop-text::before {
@@ -94,7 +105,7 @@ img.shp-item-img {
   max-width: 55%
 }
 
-.shop-list > h2 {
+.shop-list > h3 {
   padding-bottom: 70px;
 }
 
@@ -112,7 +123,7 @@ img.shp-item-img {
   vertical-align: middle;
 }
 
-.shop-info > h2 {
+.shop-info > h3 {
   padding-top: 10rem;
   padding-bottom: 3rem;
 }
@@ -140,11 +151,18 @@ img.shp-item-img {
 }
 
 .shop-list-item {
+  position: relative;
   font-weight: bold;
   padding-bottom: 40px;
 }
 
+.shop-list-item h3 {
+  position: absolute;
+  top: 0;
+}
+
 .shop-list {
+  font-size: 0;
   padding: 0 50px;
 }
 
