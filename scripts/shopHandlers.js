@@ -1,16 +1,23 @@
+let tabIdentifier;
+
 $('#tab1').attr('checked', 'checked');
+tabIdentifier = $('.shop-btn').attr('data-check');
 
 $('.shop-btn').click((event) => {
     $('.shop-btn').css({
-        color: '#ffffff',
-        background: '#4299ca',
-        border: '1px solid #ffffff'
-    });
+            color: '#ffffff',
+            background: '#4299ca',
+            border: '1px solid #ffffff'
+        });
     $(event.target).css({
-        background: '#ffffff',
-        border: 'none',
-        color: '#444443'
-    })
+            background: '#ffffff',
+            border: 'none',
+            color: '#444443'
+        });
+
+    tabIdentifier = $(event.target).attr('data-check');
+
+    console.log();
 });
 
 $('.shop-item').click((event) => {
@@ -24,17 +31,20 @@ $('.shop-item').click((event) => {
 });
 
 $('.shop-arrow').click((event) => {
+    console.log(tabIdentifier);
+
     let images = $('.items-block').find('.shop-item');
     let currentImage = $('.shop-photo > img').attr('src');
     let currentImgNumber = currentImage.match(/\d+/)[0];
+    let currentNumber = parseInt(currentImgNumber);
     if (~event.target.className.indexOf('shop-forward')) {
-        let currentNumber = parseInt(currentImgNumber) + 1;
         if (currentNumber < images.length - 1) {
+            currentNumber++;
             $('.shop-photo > img').attr('src', `${currentImage.replace(/\d+/, '' + currentNumber)}`)
         }
     } else {
-        let currentNumber = parseInt(currentImgNumber) - 1;
         if (currentNumber >= 0) {
+            currentNumber--;
             $('.shop-photo > img').attr('src', `${currentImage.replace(/\d+/, '' + currentNumber)}`)
         }
     }
