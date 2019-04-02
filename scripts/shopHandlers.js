@@ -40,7 +40,6 @@ $('.shop-item').click((event) => {
 $('.shop-arrow').click((event) => {
     let images = $(`.${tabIdentifier}`).find('.shop-item');
     Object.keys(images).forEach(function(item) {
-        console.log($(images[item]).find('[selected=selected]').length, parseInt(item));
         if (images[item].attributes && images[item].attributes.selected && !currentNumber) {
             currentNumber = item;
         }
@@ -48,15 +47,26 @@ $('.shop-arrow').click((event) => {
 
     if (~event.target.className.indexOf('shop-forward')) {
         if (currentNumber < images.length - 1) {
+            returnVisibility();
             currentNumber++;
+        } else {
+            $('.shop-forward').addClass('visibility-hidden');
         }
     } else {
-        if (currentNumber >= 0) {
+        if (currentNumber > 0) {
+            returnVisibility();
             currentNumber--;
+        } else {
+            $('.shop-backward').addClass('visibility-hidden');
         }
     }
     setSrcAttr(images);
 });
+
+function returnVisibility() {
+    $('.shop-backward').removeClass('visibility-hidden');
+    $('.shop-forward').removeClass('visibility-hidden');
+}
 
 function setSrcAttr(images) {
     let src = $(images[currentNumber]).find('img').attr('src');

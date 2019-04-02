@@ -76,6 +76,10 @@ ul {
   display: none;
 }
 
+.visibility-hidden {
+  visibility: hidden;
+}
+
 header {
   position: absolute;
   top: 45px;
