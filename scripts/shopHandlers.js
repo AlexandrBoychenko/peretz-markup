@@ -12,11 +12,10 @@ $('.shop-btn').click((event) => {
             border: '1px solid #ffffff'
         });
     $(event.target).css({
-            background: '#ffffff',
-            border: 'none',
-            color: '#444443'
-        });
-
+        background: '#ffffff',
+        border: 'none',
+        color: '#444443'
+    });
     tabIdentifier = $(event.target).attr('data-check');
     currentNumber = 0;
 });
@@ -96,5 +95,8 @@ function returnVisibility() {
 
 function setSrcAttr(images) {
     let src = $(images[currentNumber]).find('img').attr('src');
+    $(images[currentNumber]).css('background', '#a6b1c1')
+        .siblings().css('background', 'transparent');
     $('.shop-photo > img').attr('src', src);
+    
 }
