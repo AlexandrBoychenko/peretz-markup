@@ -85,8 +85,8 @@ function getJarNumber(numberText) {
 }
 
 function setJarNumber(event, number, numberText) {
-    console.log(numberText.slice(number.toString().length + 1));
-    $(event.currentTarget).siblings('.jar-number')[0].innerText = number + numberText.slice(number.toString().length)
+    let textAfterNum = numberText.slice(numberText.search(/ [а-яё, А-ЯЁ]*./g));
+    $(event.currentTarget).siblings('.jar-number')[0].innerText = number + textAfterNum;
 }
 
 function returnVisibility() {
