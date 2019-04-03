@@ -63,6 +63,32 @@ $('.shop-arrow').click((event) => {
     setSrcAttr(images);
 });
 
+$('.plus').click((event) => {
+    let numberText = getNumberText(event);
+    let jarNumber = getJarNumber(numberText);
+    jarNumber < 1000 ? setJarNumber(event, parseInt(jarNumber ) + 1, numberText) : null
+});
+
+$('.minus').click((event) => {
+    let numberText = getNumberText(event);
+    let jarNumber = getJarNumber(numberText);
+    jarNumber > 0 ? setJarNumber(event, parseInt(jarNumber ) - 1, numberText) : null
+});
+
+function getNumberText(event) {
+    return $(event.currentTarget).siblings('.jar-number')[0].innerText;
+}
+
+function getJarNumber(numberText) {
+    let matchedObject = numberText.match(/\d+/g)[0];
+    return parseInt(matchedObject);
+}
+
+function setJarNumber(event, number, numberText) {
+    console.log(numberText.slice(number.toString().length + 1));
+    $(event.currentTarget).siblings('.jar-number')[0].innerText = number + numberText.slice(number.toString().length)
+}
+
 function returnVisibility() {
     $('.shop-backward').removeClass('visibility-hidden');
     $('.shop-forward').removeClass('visibility-hidden');

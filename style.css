@@ -1125,6 +1125,8 @@ div.shop-items .capsules {
 .shop-quantity .minus, .shop-quantity .plus {
   background: #ffffff;
   text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .shop-main-btn {

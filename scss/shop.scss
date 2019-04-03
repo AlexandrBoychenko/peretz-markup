@@ -200,6 +200,8 @@ div.shop-items .capsules {
   .minus, .plus {
     background: #ffffff;
     text-align: center;
+    -moz-user-select: none;
+    -webkit-user-select: none;
   }
 }
 
