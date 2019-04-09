@@ -1,8 +1,9 @@
-$oswald-36: 36px Oswald, Sans-serif;
+$oswaldFont: 26px Oswald, Sans-serif;
 
 .wrapper-burger {
   display: none;
   position: absolute;
+  height: 100vh;
   padding: 20px 80px 30px 130px;
   top: 0;
   z-index: 100;
@@ -24,22 +25,15 @@ $oswald-36: 36px Oswald, Sans-serif;
 }
 
 .wrapper-burger-list {
-  padding-top: 65px;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .list-burger li, .social-bar li {
-  margin-top: 26px;
+  padding-top: 0.5rem;
   text-transform: uppercase;
-  font: $oswald-36;
-}
-
-.list-burger li:hover, .social-bar li:hover {
-  font-weight: bold;
-  color: #cf8b3b;
-  cursor: pointer;
-}
-
-.list-burger li, .social-bar li {
+  font: $oswaldFont;
   display: flex;
   align-items: center;
   img {
@@ -47,6 +41,14 @@ $oswald-36: 36px Oswald, Sans-serif;
     transform: rotate(-90deg);
     margin: 0 15px;
   }
+}
+
+.list-burger li:hover,
+.social-bar li:hover,
+.lang-bar li:hover {
+  font-weight: bold;
+  color: #cf8b3b;
+  cursor: pointer;
 }
 
 .social-bar {
@@ -70,7 +72,7 @@ $oswald-36: 36px Oswald, Sans-serif;
 .lang-bar li {
   display: inline-block;
   text-transform: uppercase;
-  font: $oswald-36;
+  font: $oswaldFont;
   padding: 0 10px;
   line-height: 37px;
 }

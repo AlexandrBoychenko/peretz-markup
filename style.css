@@ -509,7 +509,7 @@ a {
 .pop-up-window {
   position: fixed;
   display: block;
-  top: 3vh;
+  top: 2.5vh;
   width: 875px;
   height: 617px;
   background: #ffffff;
@@ -540,7 +540,7 @@ a {
 }
 
 .order-call-text, .basket-text {
-  font: 77px "Oswald", "Sans-serif";
+  font: 3rem "Oswald", "Sans-serif";
   text-transform: uppercase;
   color: #444443;
 }
@@ -612,20 +612,23 @@ a {
 }
 
 .basket {
+  min-width: 100%;
   position: relative;
-  width: 1360px;
-  height: 775px;
+  height: 95vh;
 }
 
 .basket-wrapper {
-  padding: 40px 55px 85px 70px;
+  padding: 1rem 55px 85px 70px;
   max-height: 100%;
   max-width: 100%;
+  -webkit-box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
 .make-order {
   font-size: 0;
-  margin-top: 55px;
+  margin-top: 2.3rem;
   height: 452px;
 }
 
@@ -660,7 +663,7 @@ a {
 }
 
 .jar-item {
-  padding: 28px 10px 28px 0;
+  padding: 0.2rem 0.7rem 0.2rem 0;
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -777,6 +780,7 @@ a {
 .wrapper-burger {
   display: none;
   position: absolute;
+  height: 100vh;
   padding: 20px 80px 30px 130px;
   top: 0;
   z-index: 100;
@@ -798,22 +802,15 @@ a {
 }
 
 .wrapper-burger-list {
-  padding-top: 65px;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .list-burger li, .social-bar li {
-  margin-top: 26px;
+  padding-top: 0.5rem;
   text-transform: uppercase;
-  font: 36px Oswald, Sans-serif;
-}
-
-.list-burger li:hover, .social-bar li:hover {
-  font-weight: bold;
-  color: #cf8b3b;
-  cursor: pointer;
-}
-
-.list-burger li, .social-bar li {
+  font: 26px Oswald, Sans-serif;
   display: flex;
   align-items: center;
 }
@@ -821,6 +818,14 @@ a {
   display: none;
   transform: rotate(-90deg);
   margin: 0 15px;
+}
+
+.list-burger li:hover,
+.social-bar li:hover,
+.lang-bar li:hover {
+  font-weight: bold;
+  color: #cf8b3b;
+  cursor: pointer;
 }
 
 .social-bar {
@@ -844,7 +849,7 @@ a {
 .lang-bar li {
   display: inline-block;
   text-transform: uppercase;
-  font: 36px Oswald, Sans-serif;
+  font: 26px Oswald, Sans-serif;
   padding: 0 10px;
   line-height: 37px;
 }

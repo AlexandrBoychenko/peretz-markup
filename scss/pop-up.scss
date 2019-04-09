@@ -15,7 +15,7 @@ $triangle-back:   url(img/background-triangle.png);
 .pop-up-window {
   position: fixed;
   display: block;
-  top: 3vh;
+  top: 2.5vh;
   width: 875px;
   height: 617px;
   background: #ffffff;
@@ -46,7 +46,7 @@ $triangle-back:   url(img/background-triangle.png);
 }
 
 .order-call-text, .basket-text {
-  font: 77px "Oswald", "Sans-serif";
+  font: 3rem "Oswald", "Sans-serif";
   text-transform: uppercase;
   color: #444443;
 }
@@ -118,20 +118,24 @@ $triangle-back:   url(img/background-triangle.png);
 }
 
 .basket {
+  min-width: 100%;
   position: relative;
-  width: 1360px;
-  height: 775px;
+  height: 95vh;
 }
 
 .basket-wrapper {
-  padding: 40px 55px 85px 70px;
+  padding: 1rem 55px 85px 70px;
   max-height: 100%;
   max-width: 100%;
+
+  -webkit-box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 17px 0px rgba(0,0,0,0.75);
 }
 
 .make-order {
   font-size: 0;
-  margin-top: 55px;
+  margin-top: 2.5rem;
   height: 452px;
 }
 
@@ -166,7 +170,7 @@ $triangle-back:   url(img/background-triangle.png);
 }
 
 .jar-item {
-  padding: 28px 10px 28px 0;
+  padding: 0.2rem 0.7rem 0.2rem 0;
   border-bottom: 1px solid #cdcdcd;
 }
 
