@@ -73,8 +73,17 @@ img.logo-main {
     right: 5.15%;
 }
 
+.why-main {
+    margin: 0 70px 0 120px;
+}
+
 .right-content > .order-header {
     font-size: 22px;
+}
+
+.shop-photo {
+    position: absolute;
+    right: calc(25% - 200px/2);
 }
 
 .right-content input {
