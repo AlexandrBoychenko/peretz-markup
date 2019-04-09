@@ -4,7 +4,11 @@
 }
 
 header {
-    padding: 70px 0;
+    padding: 0 5rem;
+}
+
+img.logo-main {
+    max-width: none;
 }
 
 .logo-main {
@@ -12,22 +16,12 @@ header {
     height: 75px;
 }
 
-.jar {
-    height: 420px;
-    left: auto;
-}
-
-.jar-img {
-    margin: 10% 65%;
-    min-width: 0;
+.item.slick-slide {
+    width: auto;
 }
 
 .content-text {
     font-size: 47px;
-}
-
-.text-content {
-    padding: 70% 65px 70px;
 }
 
 .additional-text {
@@ -40,22 +34,12 @@ header {
 }
 
 .menu-wrapper {
-    margin-top: 2.5%;
-    margin-left: 33%;
-    width: 35%;
-}
-
-#hero .follow {
-    top: 45%;
-    right: 0;
+    margin: 0;
+    width: auto;
 }
 
 .subscribe {
     font-size: 12px;
-}
-
-.phone {
-    bottom: 10%;
 }
 
 .jars-quantity {
@@ -71,6 +55,22 @@ header {
     padding: 0 50px;
     font-size: 16px;
     font-weight: bold;
+}
+
+.slick-track {
+    height: 100vh;
+}
+
+.jar {
+    top: calc(50vh - 495px/2);
+    margin-top: 5%;
+    left: calc(100vw - 91%);
+    height: auto;
+    width: auto;
+}
+
+.side-label {
+    right: 5.15%;
 }
 
 .right-content > .order-header {
