@@ -43,9 +43,8 @@ header {
     font-size: 0;
 }
 
-.logo-main {
-    width: 40px;
-    height: 30px;
+a > img.logo-main {
+    max-height: 30%;
 }
 
 .toggle-cart span, .toggle-nav > span {
@@ -70,12 +69,12 @@ header .toggle-cart, header .toggle-nav {
 }
 
 .menu-wrapper {
-    margin: auto;
-    margin-top: 1.5%;
     width: 70%;
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
+    top: 0;
+    right: 0;
 }
 
 .logo-link {
@@ -84,7 +83,7 @@ header .toggle-cart, header .toggle-nav {
 }
 
 #hero {
-    background: url(../img/background-triangle.png) no-repeat;
+    background: #cf8b3b url(../img/background-triangle.png) no-repeat;
     background-size: 200%;
     background-position-x: 71%;
     min-height: 570px;
@@ -101,7 +100,8 @@ header .toggle-cart, header .toggle-nav {
 }
 
 .side-label {
-    top: 30%;
+    top: 48.5%;
+    right: 7.15%
 }
 
 .side-label::after, .side-label::before {
@@ -129,7 +129,7 @@ header .toggle-cart, header .toggle-nav {
 }
 
 #hero .follow {
-    top: 45%;
+    top: 70%;
     right: -3%;
     bottom: auto;
 }
@@ -138,10 +138,10 @@ header .toggle-cart, header .toggle-nav {
     padding: 0;
 }
 
-.arrow-down {
-    top: 30%;
-    bottom: auto;
-    left: auto;
+a.arrow-down {
+    top: 20%;
+    bottom: 30px;
+    left: -60%;
 }
 
 .side-label::after {
@@ -175,10 +175,6 @@ header .toggle-cart, header .toggle-nav {
 .arrow-d {
     width: 10px;
     height: 8px;
-}
-
-.arrow-down {
-    top: 48%;
 }
 
 .slick-list div:nth-child(3) img {
@@ -320,4 +316,13 @@ input {
 
 .right-content > .order-header {
     font-size: 20px;
+}
+
+.why-head {
+    font: 35px Oswald, sans-serif;
+}
+
+.basket-wrapper {
+    max-height: none;
+    max-width: none;
 }
