@@ -134,3 +134,33 @@ img.logo-main {
 .pop-up-btn {
     width: 195px;
 }
+
+.shop-photo {
+    text-align: center;
+    width: 100%;
+    position: static;
+    margin-top: 12rem;
+    height: auto;
+}
+
+.shop-photo > img {
+    width: 50%;
+}
+
+.shop-info > h3 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+div.shop-info {
+    max-width: 100%;
+}
+
+p.shop-price,
+div.jars-quantity {
+    text-align: center;
+}
+
+button.shop-main-btn {
+    margin-left: calc(50% - 195px/2);
+}
