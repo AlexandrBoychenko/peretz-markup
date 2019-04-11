@@ -44,7 +44,8 @@ header {
 }
 
 a > img.logo-main {
-    max-height: 30%;
+    max-height: 20%;
+    max-width: 60%;
 }
 
 .toggle-cart span, .toggle-nav > span {
@@ -86,7 +87,7 @@ header .toggle-cart, header .toggle-nav {
     background: #cf8b3b url(../img/background-triangle.png) no-repeat;
     background-size: 200%;
     background-position-x: 71%;
-    min-height: 570px;
+    height: 620px;
 }
 
 .text-content, .content-text {
@@ -100,7 +101,7 @@ header .toggle-cart, header .toggle-nav {
 }
 
 .side-label {
-    top: 48.5%;
+    top: 48%;
     right: 7.15%
 }
 
@@ -139,9 +140,9 @@ header .toggle-cart, header .toggle-nav {
 }
 
 a.arrow-down {
-    top: 20%;
+    top: 7%;
     bottom: 30px;
-    left: -60%;
+    left: -75%;
 }
 
 .side-label::after {
@@ -318,11 +319,24 @@ input {
     font-size: 20px;
 }
 
+.why-item::before {
+    margin-top: 10px;
+}
+
 .why-head {
-    font: 35px Oswald, sans-serif;
+    font: 1.8rem Oswald, sans-serif;
+    padding-bottom: 1rem;
+}
+
+.why {
+    padding: 2rem 0;
 }
 
 .basket-wrapper {
     max-height: none;
     max-width: none;
+}
+
+.why-par, .why-par-header {
+    font-size: 0.9rem;
 }

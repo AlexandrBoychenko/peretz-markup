@@ -2,6 +2,8 @@
   position: relative;
   padding-top: 7rem;
   padding-bottom: 5rem;
+  margin-left: 3rem;
+  margin-right: 1rem;
   font-size: 0;
 }
 
@@ -15,11 +17,11 @@
 
 .why-main {
   display: inline-block;
-  margin: 0 150px 0 200px;
+  margin: 0;
 }
 
 .why-head {
-  font: 77px Oswald, sans-serif;
+  font: 4.8rem Oswald, sans-serif;
   color: #444443;
   padding-bottom: 60px;
 }
@@ -32,7 +34,7 @@
   display: inline-block;
   width: 50%;
   vertical-align: top;
-  font: 28px Oswald, sans-serif;
+  font: 1.75rem Oswald, sans-serif;
   color: #444443;
   padding-bottom: 3rem;
   padding-right: 2rem;
