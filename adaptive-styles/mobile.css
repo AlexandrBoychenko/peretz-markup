@@ -340,3 +340,74 @@ input {
 .why-par, .why-par-header {
     font-size: 0.9rem;
 }
+
+.shop-left h2 {
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+.shop-left h2 {
+    padding-bottom: 1rem;
+}
+
+.shop-left {
+    width: 100%;
+    text-align: center;
+}
+
+.shop-item-name {
+    font-size: 1rem;
+}
+
+.shop-arrow,
+.shop-list-item,
+.list-descr{
+    font-size: 1.5rem;
+}
+
+.shop-list {
+    padding: 0.5rem;
+}
+
+.shop-price {
+    font-size: 2rem;
+}
+
+.shop-list-item h3 {
+    font-size: 1rem;
+}
+
+.item-description {
+    max-width: 100%;
+    text-align: center;
+}
+
+.items-block {
+    width: 100%;
+    top: 12%;
+}
+
+.items-block {
+    padding: 0;
+}
+
+.shop-buttons {
+    padding-top: 1rem;
+}
+
+.shop-item {
+    padding-top: 0;
+    height: 14rem;
+}
+
+.shop-btn {
+    width: 6rem;
+}
+
+.shop-inf {
+    display: block;
+}
+
+.shop-info {
+    width: 100%;
+}
