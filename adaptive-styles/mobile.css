@@ -410,4 +410,6 @@ input {
 
 .shop-info {
     width: 100%;
+    position: relative;
+    top: 52rem;
 }
