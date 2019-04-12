@@ -282,7 +282,8 @@ input {
 }
 
 .basket-wrapper {
-    padding: 0;
+    padding-bottom: 2rem;
+    z-index: 100;
 }
 
 .basket, .pop-up-window {
